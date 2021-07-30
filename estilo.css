@@ -107,7 +107,7 @@ nav ul li:hover{
 .sobre_img{
     width: 50%;
     color: rgb(255, 0, 0);
-    background-image: url('../imagens/sobre.jpg');
+    background-image: url('imagens/sobre.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100%,100%;
