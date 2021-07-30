@@ -9,7 +9,7 @@ header{
     width: 100%;
     height: 100vh;
     background: #4CA1AF; 
-    background-image: url('../imagens/fundo.jpg');
+    background-image: url('imagens/fundo.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
