@@ -7,16 +7,11 @@
 html,body{height: 100%;}
 header{
     width: 100%;
-    height: 100vh;
-    background-image: url('../img/fundo2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 80px;
+    background-color: #000000;
    
 }
-::-webkit-scrollbar{width: 10px;}
-::-webkit-scrollbar-track{background-color: #000000;}
-::-webkit-scrollbar-thumb{background-color: #330080c7;border-radius: 40px;}
+
 .center{
     max-width: 1200px;
     margin: 0 auto;
@@ -62,29 +57,21 @@ div.logo{
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     user-select: none;
-    /* border: 1px solid black; */
-    padding: 5px;
-    display: inline;
 }
 div.logo strong{
     font-family: 'Bebas Neue', cursive;
-    color: rgb(230, 7, 230);
+    color: rgba(0, 235, 235, 0.603);
 }
 /* logo_end */
 nav.mobile{display: none;}
-
 h3 i{display: none !important;color: red;}
-nav.desktop{
-    width: 100%;
-    text-align: center;
-}
 nav ul{
     list-style-type: none;
     padding: 20px;
 }
 nav ul li{
     display: inline;
-    padding: 30px;
+    padding: 20px;
 }
 nav ul li a{
     text-decoration: none;
@@ -93,10 +80,10 @@ nav ul li a{
     transition: 0.5s;
     font-size: 13px;
 }
-/* nav ul li:hover{
+nav ul li:hover{
     border-bottom: 1px solid rgba(0, 255, 234, 0.37);
-} */
-nav ul li a:hover{color: purple}
+}
+nav ul li a:hover{color: rgb(0, 204, 255);}
 /* fim do menu */
 .sobre_container{
     background-color: rgb(255, 255, 255);
@@ -111,7 +98,7 @@ nav ul li a:hover{color: purple}
     text-transform: uppercase;
     text-align: center;
     padding: 10px; 
-    color: #961ee6; 
+    color: #4CA1AF; 
 }
 .sobre_texto span {
     color:rgb(0, 0, 0);
@@ -121,7 +108,7 @@ nav ul li a:hover{color: purple}
     font-family: 'Bebas Neue', cursive;
 }
 .sobre_texto span strong{
-    color: purple;
+    color: rgba(0, 235, 235, 0.603);
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
 }
@@ -135,47 +122,114 @@ nav ul li a:hover{color: purple}
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100%,100%;
-    /* border: 2px solid rgba(144, 0, 211, 0.582); */
+    border: 5px solid rgba(0, 211, 183, 0.164);
     border-radius: 5px;
 }
-
+section.novidades .nov{
+    width: 100%;
+    color: #ffffff;
+    padding: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color:#000000 ;
+    border-radius: 5px;
+    
+}
 section.novidades{
-    width: 90%;
-    min-height: 500px;
-    background:white;
+    width: 100%;
+    height: 450px;
+    background-color: #adadad1e;
+}
+div.container_novidades{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-.btn-outline-info,.btn-primary{
-    position: absolute;
-    bottom: 0;
-    margin: 10px 0;
-  
-}
-div.center > h1{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 1px 1px 2px purple;
-}
-div.card{
-    width: 33.3%;
+    width: 100%;
+    height: 250px;
     padding: 5px;
+    justify-content: space-around;
 }
-
-
-footer{
-    background-color: #000000;
+section.novidades .novidade_single{
+    width: 100%;
+    color: black;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+}
+section.novidades .novidade_single i{
+    color: black;
+    font-size: 80px;
+}
+section.novidades .novidade_single button{
+    border: 1px solid black;
+    border-radius: 4px;
     padding: 10px;
 }
+section.novidades .novidade_single button:hover{background-color: #4ca2af77;}
+
+h2.title_depoimentos,.title_servicos{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+}
+.depoimento-single{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      rgb(0, 238, 255), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+p.nome-autor{
+    color: #000000cb;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+h2.title_servicos{
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicos_single{
+    width: 25%;  
+    height: 300px;
+    text-align: center;
+}
+.servicos_single h4{
+    text-align: center;
+    margin-top: 20px;
+}
+.servicos_single span{
+    text-align: justify;
+    color: #000000;
+}
+section.extras{
+    background-color: #66666621;
+}
+footer{
+    background-color: #000000;
+}
 footer span{
-    color: rgb(145, 145, 145);
-    font-size: 50px;
+    color: rgb(160, 159, 159);
+    font-size: 45px;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -185,97 +239,50 @@ footer span{
 }
 footer p{
     text-align: center;
-    color: rgb(145, 145, 145);
-    padding: 5px;
-}
-
-/* agenda */
-
-
-section h1{
-    text-align: center;
-    text-transform: uppercase;
-}
-table{
-    height: 600px;
-    width: 80%;
-    margin: 0 auto;
-    border: 3px solid paleturquoise;
-    text-align: center;
-}
-table tr td{
-    border: 1px solid black;
-    cursor: pointer;
-}
-table tr:hover{
-    background-color: #3cb3728a;
-}
-section.container-principal{ 
-   border: 3px solid black;
-   background-image: url('../img/bgg.jpg');
-}
-div.flex{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #000000;
-
-}
-.border{
-    border-right: 3px solid white;
-}
-.container-single{
-    color: rgb(255, 255, 255);
-    padding: 10px;
+    color: rgb(110, 107, 107);
     font-size: 14px;
-    text-transform: uppercase;
+    user-select: none;
 }
-.container-single:hover{
-    box-shadow: 1px 1px 2px rgb(0, 255, 242);
+
+
+/* galeria */
+
+
+section.box{
+    width: 900px;
+    height:600px;
+    margin: 10px auto;
+    background-color: #1af3d609;
+    border-radius: 70px;
 }
-/* lista de datas */
-section.data{
-    display: flex;
-    width: 90%;
+.carousel{
+    width: 600px;
     margin: 0 auto;
-    justify-content: space-around;
-    padding-bottom: 1px;
-    background-color: rgba(128, 128, 128, 0.616);
 }
-.data-single{
-    border-bottom: 1px solid black;
-    height: auto;
-    padding: 10px;
-    width: 80%;
-    color: #000000;
-    background-color: rgba(128, 128, 128, 0.616);
+img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    border: 5px solid rgba(0, 151, 211, 0.582);
+    
 }
-.data-single1{
-    width: 20%;
-    background-color: rgba(128, 128, 128, 0.616);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    border-bottom:1px solid rgb(0, 0, 0);
-    position: relative;
+
+section.boxx{
+    width: 100%;
+    height: 50%;
+    border: 7px solid rgba(163, 3, 3, 0.507);
+    text-align: center;
 }
-.botao{
-    width: 70%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 5px;
-    border: 1px solid black;
-    text-transform: uppercase;
-    border-radius: 2px;
-    transition: 0.5s;
-}
-button{border:0;}
-.botao:hover{
-    background-color:  rgba(0, 204, 255);
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -283,8 +290,18 @@ button{border:0;}
 
 @media screen and (max-width: 768px){
 
-
-
+.carousel{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        padding: 0 2%;
+}
+    
+section.box{
+    width: 100%;
+    height:auto;
+    margin: 10px auto; 
+}
 
     nav.desktop {display: none;}
     nav.mobile { display: none;}
@@ -303,10 +320,10 @@ button{border:0;}
     cursor:pointer;
     transition: 0.3s;
     }
-    h3 i:hover{color: #000000;}
+    h3 i:hover{color: #05d2e0;}
     nav ul li{padding: 13px;text-align: center;}
-    nav ul li:hover{border:0;background-color: #d400ff0c; cursor: pointer;}
-    nav ul li a:hover{color: purple;}
+    nav ul li:hover{border:0;background-color: #31e0c30c; cursor: pointer;}
+    nav ul li a:hover{color: #000000;}
     
     .sobre_container{
         background-color: rgb(255, 255, 255);
@@ -329,45 +346,40 @@ button{border:0;}
     }
     header{
         width: 100%;
-        height: 95vh;  
+        height: auto;  
     }
     
-  
- 
-
-    section.novidades{
-        width: 90%;
-        background:rgb(255, 255, 255);
-        display: flex;
-        height:1400px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-
-
-    div.center > h1{
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 800;
+    section.novidades .nov{
+        width: 100%;
+        color: #ffffff;
+        padding: 25px;
         text-transform: uppercase;
-        color: white;
-    }
-    div.card{
-        width: 50%;
-        height: auto;
-        background-color: rgb(255, 255, 255);
-        display: flex;
+        text-align: center;
+        background-color:#000000 ;
+        border-radius: 5px;
         
     }
- .data-single1 button{
-     color: rgb(0, 0, 0);
-     font-size: 10px;
-     width: 60px;
- }
-
-
-
+    section.novidades{
+        margin-top: 185px;
+        width: 100%;
+        background-color: #adadad1e;
+    }
+    section.novidades .novidade_single{
+        margin: 0 auto;
+    }
+    div.container_novidades{
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+    section.extras{
+        margin-top: 515px;
+    }
+    section.extras .nome-autor{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    }
     .servicos{
         display: flex;
         flex-direction: column;
@@ -409,7 +421,7 @@ color: white;
 cursor:pointer;
 transition: 0.3s;
 }
-h3 i:hover{color: #000000;}
+h3 i:hover{color: #05d2e0;}
 nav ul li{padding: 13px;text-align: center;}
 nav ul li:hover{border:0;background-color: #31e0c30c; cursor: pointer;}
 nav ul li a:hover{color: #000000;}
@@ -435,7 +447,7 @@ div.logo{font-size: 50px;}
 }
 header{
     width: 100%;
-    height: 95vh;  
+    height: auto;  
 }
 
 section.novidades .nov{
@@ -489,3 +501,4 @@ section.extras .nome-autor{
     color: #000000;
 }
 }
+

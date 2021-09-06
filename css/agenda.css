@@ -5,18 +5,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 html,body{height: 100%;}
+html,body{height: 100%;}
 header{
     width: 100%;
-    height: 100vh;
-    background-image: url('../img/fundo2.jpg');
+    height: 60vh;
+    background-image: url('../img/fundo.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
    
 }
-::-webkit-scrollbar{width: 10px;}
-::-webkit-scrollbar-track{background-color: #000000;}
-::-webkit-scrollbar-thumb{background-color: #330080c7;border-radius: 40px;}
+
 .center{
     max-width: 1200px;
     margin: 0 auto;
@@ -62,29 +61,21 @@ div.logo{
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     user-select: none;
-    /* border: 1px solid black; */
-    padding: 5px;
-    display: inline;
 }
 div.logo strong{
     font-family: 'Bebas Neue', cursive;
-    color: rgb(230, 7, 230);
+    color: rgba(0, 235, 235, 0.603);
 }
 /* logo_end */
 nav.mobile{display: none;}
-
 h3 i{display: none !important;color: red;}
-nav.desktop{
-    width: 100%;
-    text-align: center;
-}
 nav ul{
     list-style-type: none;
     padding: 20px;
 }
 nav ul li{
     display: inline;
-    padding: 30px;
+    padding: 20px;
 }
 nav ul li a{
     text-decoration: none;
@@ -93,105 +84,14 @@ nav ul li a{
     transition: 0.5s;
     font-size: 13px;
 }
-/* nav ul li:hover{
+nav ul li:hover{
     border-bottom: 1px solid rgba(0, 255, 234, 0.37);
-} */
-nav ul li a:hover{color: purple}
-/* fim do menu */
-.sobre_container{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    height: 600px;
 }
-.sobre_texto{
-    width: 50%;
+nav ul li a:hover{color: #000000;}
 
+section.agenda{
+    padding: 20px;
 }
-.sobre_texto h1{
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px; 
-    color: #961ee6; 
-}
-.sobre_texto span {
-    color:rgb(0, 0, 0);
-    font-size: 65px;
-    text-align: center;
-    display: block;
-    font-family: 'Bebas Neue', cursive;
-}
-.sobre_texto span strong{
-    color: purple;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-}
-.sobre_texto p{
-    color: rgb(0, 0, 0);
-    text-align: justify;
-    padding:17px;
-}
-.sobre_img{
-    width:50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%,100%;
-    /* border: 2px solid rgba(144, 0, 211, 0.582); */
-    border-radius: 5px;
-}
-
-section.novidades{
-    width: 90%;
-    min-height: 500px;
-    background:white;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-.btn-outline-info,.btn-primary{
-    position: absolute;
-    bottom: 0;
-    margin: 10px 0;
-  
-}
-div.center > h1{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 1px 1px 2px purple;
-}
-div.card{
-    width: 33.3%;
-    padding: 5px;
-}
-
-
-footer{
-    background-color: #000000;
-    padding: 10px;
-}
-footer span{
-    color: rgb(145, 145, 145);
-    font-size: 50px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-family: 'Bebas Neue', cursive;
-}
-footer p{
-    text-align: center;
-    color: rgb(145, 145, 145);
-    padding: 5px;
-}
-
-/* agenda */
-
-
 section h1{
     text-align: center;
     text-transform: uppercase;
@@ -211,8 +111,11 @@ table tr:hover{
     background-color: #3cb3728a;
 }
 section.container-principal{ 
-   border: 3px solid black;
-   background-image: url('../img/bgg.jpg');
+   margin: 30px;
+   /* background-image: url('../img/slide.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-size: 100%,100%; */
 }
 div.flex{
     display: flex;
@@ -221,6 +124,7 @@ div.flex{
     margin: 0 auto;
     padding: 20px;
     background-color: #000000;
+    border: 1px solid rgba(255, 0, 0, 0.37);
 
 }
 .border{
@@ -281,11 +185,57 @@ button{border:0;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-image: url('../img/bg.jpg');
+    background-attachment: fixed;
+    background-size: 100%,100%;
+    background-size: cover;
+    padding: 40px;
+}
+footer span{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+}
+footer p{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 768px){
-
-
-
-
     nav.desktop {display: none;}
     nav.mobile { display: none;}
     nav.mobile ul{
@@ -305,8 +255,8 @@ button{border:0;}
     }
     h3 i:hover{color: #000000;}
     nav ul li{padding: 13px;text-align: center;}
-    nav ul li:hover{border:0;background-color: #d400ff0c; cursor: pointer;}
-    nav ul li a:hover{color: purple;}
+    nav ul li:hover{border:0;background-color: #31e0c30c; cursor: pointer;}
+    nav ul li a:hover{color: #000000;}
     
     .sobre_container{
         background-color: rgb(255, 255, 255);
@@ -332,42 +282,37 @@ button{border:0;}
         height: 95vh;  
     }
     
-  
- 
-
-    section.novidades{
-        width: 90%;
-        background:rgb(255, 255, 255);
-        display: flex;
-        height:1400px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-
-
-    div.center > h1{
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 800;
+    section.novidades .nov{
+        width: 100%;
+        color: #ffffff;
+        padding: 25px;
         text-transform: uppercase;
-        color: white;
-    }
-    div.card{
-        width: 50%;
-        height: auto;
-        background-color: rgb(255, 255, 255);
-        display: flex;
+        text-align: center;
+        background-color:#000000 ;
+        border-radius: 5px;
         
     }
- .data-single1 button{
-     color: rgb(0, 0, 0);
-     font-size: 10px;
-     width: 60px;
- }
-
-
-
+    section.novidades{
+        margin-top: 185px;
+        width: 100%;
+        background-color: #adadad1e;
+    }
+    section.novidades .novidade_single{
+        margin: 0 auto;
+    }
+    div.container_novidades{
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+    section.extras{
+        margin-top: 515px;
+    }
+    section.extras .nome-autor{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    }
     .servicos{
         display: flex;
         flex-direction: column;
@@ -388,6 +333,30 @@ button{border:0;}
         color: #000000;
     }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
